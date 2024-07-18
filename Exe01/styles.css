@@ -1,0 +1,48 @@
+body {
+    padding: 25px;
+    margin: 25px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden; /* لمنع تغير حجم الحاوية */
+    height: 200px; /* تعيين ارتفاع ثابت للحاوية */
+    position: relative; /* لتحديد موقع العناصر الداخلية بالنسبة للحاوية */
+}
+
+.title {
+    color: #5C6AC4;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #5C6AC4;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a4c9b;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #5C6AC4;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* إخفاء الرسالة افتراضيًا */
+    width: calc(100% - 20px); /* لضمان أن الرسالة تكون داخل الحاوية مع البادئة */
+    left: 10px; /* ضبط الرسالة لتكون داخل الحاوية بشكل متناغم */
+    opacity: 0; /* لإخفاء الرسالة عند البداية */
+    transition: opacity 0.5s ease-in-out; /* إضافة تأثير انتقال لتغيير الشفافية */
+}
